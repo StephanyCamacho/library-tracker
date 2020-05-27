@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="title-text">Title</label>
+        <input type="text" name="title" id="title-text">
+        <label for="author-text">Author</label>
+        <input type="text" name="author" id="author-text">
+        <label for="pages-text">Pages</label>
+        <input type="number" name="pages" id="pages-text">
+        <label for="read-option">Read?</label>
+        <input type="text" name="read" id="read-option">
+        <button class="submit" type="button">Submit</button>
+    </form>
+
+    <table class="books-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Read</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="empty">
+                <td>None</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
