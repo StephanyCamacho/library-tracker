@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form>
+    <form class="book-info">
         <label for="title-text">Title</label>
         <input type="text" name="title" id="title-text">
         <label for="author-text">Author</label>
@@ -17,10 +17,10 @@
         <input type="number" name="pages" id="pages-text">
         <label for="read-option">Read?</label>
         <input type="text" name="read" id="read-option">
-        <button class="submit" type="button">Submit</button>
+        <button class="submit-button" type="button">Submit</button>
     </form>
 
-    <table class="books-table">
+    <table class="book-list">
         <thead>
             <tr>
                 <th>Title</th>
@@ -30,7 +30,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="empty">
+            <tr class="empty-list">
                 <td>None</td>
             </tr>
         </tbody>
