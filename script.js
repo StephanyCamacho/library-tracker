@@ -1,4 +1,4 @@
-const myLibrary = findLibrary('library');
+const myLibrary = getLibrary('library');
 const bookTable = document.querySelector('.book-list');
 const addButton = document.querySelector('.submit-button');
 const bookInfo = document.querySelectorAll('.book-info input');
@@ -57,7 +57,7 @@ function saveBook(library) {
 	localStorage.setItem('library', JSON.stringify(library));
 }
 
-function findLibrary(key) {
+function getLibrary(key) {
 	if (!localStorage.getItem(key)) {
 		return [];
 	}
