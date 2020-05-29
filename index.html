@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<title>Library</title>
+	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <form class="book-info">
-        <label for="title-text">Title</label>
-        <input type="text" name="title" id="title-text">
-        <label for="author-text">Author</label>
-        <input type="text" name="author" id="author-text">
-        <label for="pages-text">Pages</label>
-        <input type="number" name="pages" id="pages-text">
-        <label for="read-option">Read?</label>
-        <input type="text" name="read" id="read-option">
-        <button class="submit-button" type="button">Submit</button>
-    </form>
-
-    <table class="book-list">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Pages</th>
-                <th>Read</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="empty-list">
-                <td>None</td>
-            </tr>
-        </tbody>
-    </table>
+	<form class="book-info">
+			<input type="text" id="title-text" placeholder="Title" name="title">
+			<input type="text" id="author-text" placeholder="Author" name="author">
+			<input type="text" id="pages-text" placeholder="Pages" name="pages">
+			<input type="text"  id="read-option" placeholder="Read" name="read">
+		<button class="submit-button" type="button">Submit</button>
+	</form>
+	<table class="book-list">
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Pages</th>
+				<th>Read</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="empty-list">
+				<td>Empty Book List</td>
+			</tr>
+		</tbody>
+	</table>
+<script src="script.js"></script>
 </body>
-
 </html>
